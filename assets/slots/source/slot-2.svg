@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+ <defs>
+  <pattern id="grill" width="36" height="36" patternUnits="userSpaceOnUse">
+   <path d="M18 0 L18 36" stroke="#252529" stroke-opacity=".05" stroke-width="2"/>
+  </pattern>
+ </defs>
+ <rect width="1200" height="900" fill="#f3ebdf"/>
+ <rect width="1200" height="900" fill="url(#grill)"/>
+ <rect x="36" y="36" width="1128" height="828" fill="none" stroke="#252529" stroke-opacity=".18" stroke-width="2"/>
+ <text x="84" y="190" font-family="Georgia, 'Noto Serif', serif" font-size="150" fill="#c1552c" font-weight="700">02</text>
+ <text x="88" y="236" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="6" fill="#16306e" font-weight="700">SLOT 2 OF 6</text>
+ <circle cx="660" cy="440" r="270" fill="#fffaf3" stroke="#252529" stroke-opacity=".12" stroke-width="2"/>
+ <g transform="translate(316 211) scale(1.25)" fill="#fffaf3" stroke="#252529" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+ <path d="M34 222 C30 196 46 176 82 168 L176 150 C206 120 230 96 262 92 L302 88 C322 88 332 100 340 116 C362 150 410 162 458 168 C496 172 514 190 512 214 L510 222 Z"/>
+ <path d="M24 222 L520 222 C528 222 530 230 526 240 C520 256 506 266 486 266 L64 266 C40 266 26 256 22 240 C20 230 18 222 24 222 Z"/>
+ <path d="M60 244 C140 236 220 250 300 242 C380 234 440 248 500 240" opacity=".55"/>
+ <path d="M92 196 C170 178 260 200 330 170 C380 150 430 176 470 184" opacity=".55"/>
+ <path d="M250 116 L272 132 M266 104 L294 124 M286 96 L314 116"/>
+ </g>
+ <path d="M525 674 A270 270 0 0 0 894 575" fill="none" stroke="#c1552c" stroke-width="10" stroke-linecap="round"/>
+ <path d="M912 540 L908 588 L872 568 Z" fill="#c1552c"/>
+ <text x="1116" y="820" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="4" fill="#252529" fill-opacity=".55">PHOTO COMING SOON</text>
+</svg>
