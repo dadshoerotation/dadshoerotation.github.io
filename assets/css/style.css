@@ -215,3 +215,5 @@ p{margin:0 0 1.1em}
   .tab{flex:1 1 0;padding:12px 6px;font-size:11px;letter-spacing:.08em;white-space:nowrap}
   .tab-intro{font-size:14px}
 }
+/* v7: Inflation Sucks rule */
+.tab-rule{margin:0 0 20px;padding:12px 16px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:var(--radius);font:600 16px/1.4 var(--serif);color:var(--charcoal);max-width:720px}
