@@ -28,25 +28,20 @@ assets/css/style.css           All styles (brand colors are at the top)
 assets/                        Logos, favicon, slot images
 ```
 
-## Swapping in real shoe photos
+## Slot photos
 
-Each slot uses exactly one image file. To use your own photo, replace the file and keep the same name:
+Each slot uses exactly one image file. It shows on the homepage tile and at the top of that slot's page:
 
-| Slot | Image file |
-|---|---|
-| 1. The Everyday Dad Shoe | `assets/slots/slot-1.jpg` |
-| 2. The Workout Shoe | `assets/slots/slot-2.jpg` |
-| 3. The Clean White Sneaker | `assets/slots/slot-3.jpg` |
-| 4. The Work Dress Shoe | `assets/slots/slot-4.jpg` |
-| 5. The Boot | `assets/slots/slot-5.jpg` |
-| 6. The Wildcard | `assets/slots/slot-6.jpg` |
+| Slot | Image file | Current image |
+|---|---|---|
+| 1. The Everyday Dad Shoe | `assets/slots/slot-1.jpg` | Nike Air Force 1 Low FlyEase, white (StockX) |
+| 2. The Workout Shoe | `assets/slots/slot-2.jpg` | adidas Adizero Dropset Pro (adidas) |
+| 3. The Clean White Sneaker | `assets/slots/slot-3.jpg` | Magnanni Amadeo, white (Magnanni) |
+| 4. The Work Dress Shoe | `assets/slots/slot-4.jpg` | Allen Edmonds Park Avenue (Zappos) |
+| 5. The Boot | `assets/slots/slot-5.jpg` | Clarks Desert Boot + Tecovas Cartwright, side by side (Clarks, Tecovas) |
+| 6. The Wildcard | `assets/slots/slot-6.jpg` | On Cloudtilt Arc, Alloy/Ivory (On) |
 
-Each image appears on the homepage tile and at the top of that slot's page.
-
-- Use a JPG saved under the same name. A landscape **4:3** shape works best (for example 1200 × 900). Other shapes get cropped to fit from the center.
-- Keep each file under about 300 KB so the page loads fast on phones.
-- The current files are brand-colored placeholders. Their SVG sources are in `assets/slots/source/` in case you want to make more.
-- If you use PNG or WebP instead, find `slot-N.jpg` in `index.html` and in that slot's page and change the extension in both places.
+To swap in your own photo, replace the file and keep the same name. Use a JPG, 1200 x 900 (4:3), shoe centered on a white background, under about 200 KB. If you change the source of a photo, update the "Image:" caption on the slot page and the credit line in the footer of `index.html`.
 
 ## Changing a slot's pick
 
@@ -66,4 +61,3 @@ Open the slot page (for example `slots/wildcard.html`). Edit the text inside `<d
 
 - `404.html` links to `/index.html`. That works on a custom domain or a `username.github.io` site. For a project site (`username.github.io/repo-name/`), change that link to `/repo-name/index.html`.
 - The `og:image` tag uses a relative path. Once the site has a real address, change it to the full URL (for example `https://yourdomain.com/assets/dadshoerotation-logo-profile.png`) so link previews show the logo.
-- No product photos from retailers are used anywhere on the site.

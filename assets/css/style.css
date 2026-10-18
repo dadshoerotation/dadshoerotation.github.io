@@ -161,3 +161,16 @@ p{margin:0 0 1.1em}
   .article p,.article li{font-size:17px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* v2: product photos + shop links */
+.tile-img{background:#fff}
+.tile-img img{object-fit:contain}
+.tile .tile-img{border-bottom:1px solid var(--line)}
+.slot-photo{margin:0}
+.img-credit{margin:8px 2px 0;font-size:12px;letter-spacing:.04em;color:var(--ink-soft)}
+.shop{margin:16px 0 0!important}
+.btn.btn-shop{background:var(--orange);border-color:var(--orange);color:#fff}
+.btn.btn-shop:hover{background:#fff;border-color:#fff;color:var(--charcoal)}
+.btn.btn-sm{padding:10px 14px;font-size:11px}
+.pick-split p:not(.eyebrow){margin:4px 0 0;font-size:14px}
+.pick-split .shop{margin-top:12px!important}
