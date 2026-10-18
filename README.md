@@ -62,6 +62,10 @@ Open the slot page (for example `slots/wildcard.html`). Edit the text inside `<d
 - `404.html` links to `/index.html`. That works on a custom domain or a `username.github.io` site. For a project site (`username.github.io/repo-name/`), change that link to `/repo-name/index.html`.
 - The `og:image` tag uses a relative path. Once the site has a real address, change it to the full URL (for example `https://yourdomain.com/assets/dadshoerotation-logo-profile.png`) so link previews show the logo.
 
-## Budget Rotation
+## Inflation Sucks (budget rotation)
 
 `budget.html` lists the most economical pick for each slot. Each tile uses one image, `assets/budget/budget-1.jpg` through `budget-6.jpg`. Slot 1 is Dad Shoe Matt's own outlet photo, with metadata stripped. Slots 2–6 are Nordstrom Rack picks. Their images are "Photo coming soon" placeholders for now. To replace one, drop in a 1200 x 900 JPG with the same name. Rack listings sell out fast. When one goes away, update the tile in `budget.html` and the "Budget pick" box on the matching slot page.
+
+## Homepage tabs
+
+The rotation section on the homepage has three tabs: Matt's Picks (the default), The Classics, and Inflation Sucks. Each tab can be linked with `#picks`, `#classics` or `#inflation`. The small script is `assets/js/tabs.js`. Without JavaScript, the page just shows Matt's Picks. The Classics tiles are placeholders (`assets/classics/classic-1.jpg` through `classic-6.jpg`) until the classic picks are chosen. The Inflation Sucks tiles use the same picks and images as `budget.html`, so update both when a pick changes.

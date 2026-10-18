@@ -22,7 +22,7 @@
       <img src="assets/dadshoerotation-logo-profile.svg" alt="Dad Shoe Rotation logo" width="60" height="60">
       <span><span class="brand-name">Dad Shoe Rotation</span><span class="brand-handle">@dadshoerotation</span></span>
     </a>
-    <nav class="nav" aria-label="Main"><a href="index.html#rotation" aria-current="page">Rotation</a><a href="blog/index.html">Blog</a><a href="budget.html">Budget</a><a href="https://www.youtube.com/@dadshoerotation" rel="noopener">YouTube</a><a href="https://www.tiktok.com/@dadshoerotation" rel="noopener">TikTok</a></nav>
+    <nav class="nav" aria-label="Main"><a href="index.html#rotation" aria-current="page">Rotation</a><a href="blog/index.html">Blog</a><a href="budget.html">Inflation Sucks</a><a href="https://www.youtube.com/@dadshoerotation" rel="noopener">YouTube</a><a href="https://www.tiktok.com/@dadshoerotation" rel="noopener">TikTok</a></nav>
   </div>
 </header>
 <main id="main">
@@ -45,6 +45,12 @@
       <h2 id="rotation-title">The six slots</h2>
       <p>Tap a slot for the rules, my pick, and other options.</p>
     </div>
+    <div class="tabs" role="tablist" aria-label="Rotation views" hidden>
+      <button type="button" class="tab" role="tab" id="tab-picks" aria-controls="panel-picks" aria-selected="true" data-hash="picks">Matt&rsquo;s Picks</button>
+      <button type="button" class="tab" role="tab" id="tab-classics" aria-controls="panel-classics" aria-selected="false" tabindex="-1" data-hash="classics">The Classics</button>
+      <button type="button" class="tab" role="tab" id="tab-inflation" aria-controls="panel-inflation" aria-selected="false" tabindex="-1" data-hash="inflation">Inflation Sucks</button>
+    </div>
+    <div class="tab-panel" id="panel-picks" aria-labelledby="tab-picks">
     <div class="grid">
       <a class="tile" href="slots/everyday-dad-shoe.html">
         <div class="tile-img"><img src="assets/slots/slot-1.jpg" alt="Nike Air Force 1 Low FlyEase in white" width="1200" height="900" loading="lazy"></div>
@@ -101,17 +107,142 @@
         </div>
       </a>
     </div>
+    </div>
+    <div class="tab-panel" id="panel-classics" role="tabpanel" aria-labelledby="tab-classics" tabindex="0" hidden>
+    <p class="tab-intro">The all-time classics for each slot. I&rsquo;m picking these myself, so they&rsquo;re coming soon.</p>
+    <div class="grid">
+      <a class="tile" href="slots/everyday-dad-shoe.html">
+        <div class="tile-img"><img src="assets/classics/classic-1.jpg" alt="The Everyday Dad Shoe: classic pick coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 1</span>
+          <h3 class="tile-name">The Everyday Dad Shoe</h3>
+          <p class="tile-pick">Classic pick<strong>Coming soon</strong></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/workout-shoe.html">
+        <div class="tile-img"><img src="assets/classics/classic-2.jpg" alt="The Workout Shoe: classic pick coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 2</span>
+          <h3 class="tile-name">The Workout Shoe</h3>
+          <p class="tile-pick">Classic pick<strong>Coming soon</strong></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/clean-white-sneaker.html">
+        <div class="tile-img"><img src="assets/classics/classic-3.jpg" alt="The Clean White Sneaker: classic pick coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 3</span>
+          <h3 class="tile-name">The Clean White Sneaker</h3>
+          <p class="tile-pick">Classic pick<strong>Coming soon</strong></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/work-dress-shoe.html">
+        <div class="tile-img"><img src="assets/classics/classic-4.jpg" alt="The Work Dress Shoe: classic pick coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 4</span>
+          <h3 class="tile-name">The Work Dress Shoe</h3>
+          <p class="tile-pick">Classic pick<strong>Coming soon</strong></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/boot.html">
+        <div class="tile-img"><img src="assets/classics/classic-5.jpg" alt="The Boot: classic pick coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 5 &middot; Optional</span>
+          <h3 class="tile-name">The Boot</h3>
+          <p class="tile-pick">Classic pick<strong>Coming soon</strong></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/wildcard.html">
+        <div class="tile-img"><img src="assets/classics/classic-6.jpg" alt="The Wildcard: classic pick coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 6</span>
+          <h3 class="tile-name">The Wildcard</h3>
+          <p class="tile-pick">Classic pick<strong>Coming soon</strong></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+    </div>
+    </div>
+    <div class="tab-panel" id="panel-inflation" role="tabpanel" aria-labelledby="tab-inflation" tabindex="0" hidden>
+    <p class="tab-intro">The most economical pick for each slot. Slots 2 through 6 are from Nordstrom Rack, and Rack listings sell out fast. <a href="budget.html">See Inflation Sucks for shop links &rarr;</a></p>
+    <div class="grid">
+      <a class="tile" href="slots/everyday-dad-shoe.html">
+        <div class="tile-img"><img src="assets/budget/budget-1.jpg" alt="Nike Air Monarch IV on a Nike outlet shelf with its price tag" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 1</span>
+          <h3 class="tile-name">The Everyday Dad Shoe</h3>
+          <p class="tile-pick">Inflation Sucks pick<strong>Nike Air Monarch IV</strong></p>
+          <p class="budget-price">$74.99 at the Nike outlet (retail $85)</p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/workout-shoe.html">
+        <div class="tile-img"><img src="assets/budget/budget-2.jpg" alt="New Balance 608 v5 Training Sneaker, photo coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 2</span>
+          <h3 class="tile-name">The Workout Shoe</h3>
+          <p class="tile-pick">Inflation Sucks pick<strong>New Balance 608 v5 Training Sneaker</strong></p>
+          <p class="budget-price">$54.97 (was $69.99)<span class="asof">Price as of Oct 18, 2026</span></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/clean-white-sneaker.html">
+        <div class="tile-img"><img src="assets/budget/budget-3.jpg" alt="Vince Camuto Hallman Leather Sneaker, photo coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 3</span>
+          <h3 class="tile-name">The Clean White Sneaker</h3>
+          <p class="tile-pick">Inflation Sucks pick<strong>Vince Camuto Hallman Leather Sneaker</strong></p>
+          <p class="budget-price">$49.97 (was $119.00)<span class="asof">Price as of Oct 18, 2026</span></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/work-dress-shoe.html">
+        <div class="tile-img"><img src="assets/budget/budget-4.jpg" alt="Nunn Bush Fitz Flex Leather Plain Toe Oxford, photo coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 4</span>
+          <h3 class="tile-name">The Work Dress Shoe</h3>
+          <p class="tile-pick">Inflation Sucks pick<strong>Nunn Bush Fitz Flex Leather Plain Toe Oxford</strong></p>
+          <p class="budget-price">$89.97 (was $110.00)<span class="asof">Price as of Oct 18, 2026</span></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/boot.html">
+        <div class="tile-img"><img src="assets/budget/budget-5.jpg" alt="Clarks Wallaston Chukka Boot, photo coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 5 &middot; Optional</span>
+          <h3 class="tile-name">The Boot</h3>
+          <p class="tile-pick">Inflation Sucks pick<strong>Clarks Wallaston Chukka Boot</strong></p>
+          <p class="budget-price">$89.97 (was $120.00)<span class="asof">Price as of Oct 18, 2026</span></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+      <a class="tile" href="slots/wildcard.html">
+        <div class="tile-img"><img src="assets/budget/budget-6.jpg" alt="Saucony Grid Jazz 9, photo coming soon" width="1200" height="900" loading="lazy"></div>
+        <div class="tile-body">
+          <span class="tile-num">Slot 6</span>
+          <h3 class="tile-name">The Wildcard</h3>
+          <p class="tile-pick">Inflation Sucks pick<strong>Saucony Grid Jazz 9</strong></p>
+          <p class="budget-price">$74.97 (was $125.00)<span class="asof">Price as of Oct 18, 2026</span></p>
+          <span class="tile-more">See the slot <span>&rarr;</span></span>
+        </div>
+      </a>
+    </div>
+    </div>
   </div>
 </section>
 <section class="section budget-teaser" aria-labelledby="budget-teaser-title">
   <div class="wrap">
     <div class="teaser-card">
       <div>
-        <p class="eyebrow">New: The Budget Rotation</p>
+        <p class="eyebrow">New: Inflation Sucks</p>
         <h2 id="budget-teaser-title">Same six slots, smaller spend</h2>
         <p>The most economical pick I&rsquo;d suggest for each slot, starting with the classic Nike Air Monarch IV for $74.99 at the Nike outlet.</p>
       </div>
-      <p class="hero-cta"><a class="btn btn-solid" href="budget.html">See the budget picks &rarr;</a></p>
+      <p class="hero-cta"><a class="btn btn-solid" href="budget.html">See Inflation Sucks &rarr;</a></p>
     </div>
   </div>
 </section>
@@ -144,5 +275,6 @@
     <p class="fine">&copy; 2026 Dad Shoe Rotation &middot; @dadshoerotation<br>Product images: StockX, adidas, Magnanni, Zappos (Allen Edmonds), Clarks, Tecovas, On.</p>
   </div>
 </footer>
+<script src="assets/js/tabs.js" defer></script>
 </body>
 </html>
