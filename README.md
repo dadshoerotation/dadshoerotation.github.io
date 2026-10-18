@@ -61,3 +61,7 @@ Open the slot page (for example `slots/wildcard.html`). Edit the text inside `<d
 
 - `404.html` links to `/index.html`. That works on a custom domain or a `username.github.io` site. For a project site (`username.github.io/repo-name/`), change that link to `/repo-name/index.html`.
 - The `og:image` tag uses a relative path. Once the site has a real address, change it to the full URL (for example `https://yourdomain.com/assets/dadshoerotation-logo-profile.png`) so link previews show the logo.
+
+## Budget Rotation
+
+`budget.html` lists the most economical pick for each slot. Each tile uses one image, `assets/budget/budget-1.jpg` through `budget-6.jpg`. Slot 1's file is a "Photo coming soon" placeholder. Replace it with your Air Monarch IV photo, keeping the same name (1200 x 900 JPG, white background works best). Slots 2–6 are "Coming soon" placeholders until Nordstrom Rack picks are added. To add one, swap in the image, then edit that tile's text and add a "Shop at Nordstrom Rack" link in `budget.html`. Also update the "Budget pick" box on the matching slot page.

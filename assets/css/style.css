@@ -174,3 +174,16 @@ p{margin:0 0 1.1em}
 .btn.btn-sm{padding:10px 14px;font-size:11px}
 .pick-split p:not(.eyebrow){margin:4px 0 0;font-size:14px}
 .pick-split .shop{margin-top:12px!important}
+
+/* v4: budget rotation */
+.budget-price{margin:6px 0 0;font-size:14px;color:var(--orange-dark);font-weight:600}
+.budget-note{margin:22px 0 0;font-size:14px;color:var(--ink-soft)}
+.budget-teaser{padding-top:0}
+.teaser-card{display:flex;align-items:center;justify-content:space-between;gap:28px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:var(--radius);padding:28px 32px}
+.teaser-card h2{margin-bottom:6px}
+.teaser-card p{margin:0;color:var(--ink-soft)}
+.teaser-card .hero-cta{margin:0;flex-shrink:0}
+.budget-callout{margin-top:16px;border:1px dashed var(--orange);border-radius:var(--radius);padding:16px 20px;background:#fff}
+.budget-callout .eyebrow{margin-bottom:6px}
+.budget-callout p:not(.eyebrow){margin:0;font-size:15px}
+@media (max-width:640px){.teaser-card{flex-direction:column;align-items:flex-start;padding:22px 20px}}
