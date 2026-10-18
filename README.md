@@ -64,7 +64,7 @@ Open the slot page (for example `slots/wildcard.html`). Edit the text inside `<d
 
 ## Inflation Sucks (budget rotation)
 
-`budget.html` lists the most economical pick for each slot. Each tile uses one image, `assets/budget/budget-1.jpg` through `budget-6.jpg`. Slot 1 is Dad Shoe Matt's own outlet photo, with metadata stripped. Slots 2–6 are Nordstrom Rack picks. Their images are "Photo coming soon" placeholders for now. To replace one, drop in a 1200 x 900 JPG with the same name. Rack listings sell out fast. When one goes away, update the tile in `budget.html` and the "Budget pick" box on the matching slot page.
+`budget.html` lists the most economical pick for each slot. Each tile uses one image, `assets/budget/budget-1.jpg` through `budget-6.jpg`. Slot 1 is Dad Shoe Matt's own outlet photo, with metadata stripped. Slots 2–6 are Nordstrom Rack picks. Their images come from Nordstrom Rack (credited "Image: Nordstrom Rack"). To replace one, drop in a 1200 x 900 JPG with the same name. Rack listings sell out fast. When one goes away, update the tile in `budget.html` and the "Budget pick" box on the matching slot page.
 
 ## Homepage tabs
 
