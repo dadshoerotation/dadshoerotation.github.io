@@ -226,3 +226,14 @@ p{margin:0 0 1.1em}
 .hero-stack .hero-cta{justify-content:center}
 @media (max-width:900px){.hero-stack{gap:12px}.hero-stack .hero-logo{display:block}}
 @media (max-width:640px){.hero{padding:24px 0 16px}}
+/* v9: backup pick */
+.pick-backup{margin-top:16px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy)}
+.pick-backup .backup-photo{margin:6px 0 12px;max-width:340px}
+.pick-backup .backup-photo .tile-img{border:1px solid var(--line);border-radius:var(--radius)}
+.pick-backup .backup-photo figcaption{margin-top:4px}
+.backup-price{font-weight:600;color:var(--orange-dark);font-size:15px}
+.tile-backup{margin:4px 0 0;font-size:13px;color:var(--ink-soft)}
+.pick-backup,.pick-backup h3,.pick-backup p{color:var(--charcoal)}
+.pick-backup .eyebrow{color:var(--orange)}
+.pick-backup .img-credit,.pick-backup .asof{color:var(--ink-soft)}
+.pick-backup .backup-price{color:var(--orange-dark)}
