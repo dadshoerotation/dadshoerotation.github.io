@@ -64,7 +64,7 @@ Open the slot page (for example `slots/wildcard.html`). Edit the text inside `<d
 
 ## Inflation Sucks (budget rotation)
 
-Inflation Sucks is a tab in the homepage rotation section. `budget.html` just redirects to `/#inflation`. The rule: every Inflation Sucks pick is $80 or under, and only picks Dad Shoe Matt has set appear. Tile images are `assets/budget/budget-1.jpg` through `budget-6.jpg`. Slot 2 is the adidas Adizero Pacer and slot 3 is the adidas Continental 80 (images: adidas). Slots 1 and 4 to 6 are "Coming soon" placeholders. When a pick is set, swap in a 1200 x 900 JPG, update that tile in `index.html`, and update the "Inflation Sucks pick" box on the matching slot page.
+Inflation Sucks is a tab in the homepage rotation section. `budget.html` just redirects to `/#inflation`. Inflation Sucks is the most economical version of each slot, and only picks Dad Shoe Matt has set appear. There is no global price cap: each set slot shows a "Budget limit" badge equal to the higher of $100 or that slot's pick price (`.budget-limit`, on the tile and on the slot page's Inflation Sucks box). "Coming soon" slots show no limit. Tile images are `assets/budget/budget-1.jpg` through `budget-6.jpg`. Slot 2 is the adidas Adizero Pacer and slot 3 is the adidas Continental 80 (images: adidas). Slots 1 and 4 to 6 are "Coming soon" placeholders. When a pick is set, swap in a 1200 x 900 JPG, update that tile in `index.html`, and update the "Inflation Sucks pick" box on the matching slot page.
 
 ## Homepage tabs
 
