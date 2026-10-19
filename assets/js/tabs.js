@@ -18,6 +18,7 @@
   }
   function fromHash() {
     var h = location.hash.slice(1);
+    if (h === 'rich') { location.replace('rich.html'); return; }
     var t = tabs.filter(function (x) { return x.dataset.hash === h; })[0];
     if (t) {
       select(t);
