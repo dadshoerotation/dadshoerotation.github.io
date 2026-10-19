@@ -64,8 +64,12 @@ Open the slot page (for example `slots/wildcard.html`). Edit the text inside `<d
 
 ## Inflation Sucks (budget rotation)
 
-Inflation Sucks is a tab in the homepage rotation section. `budget.html` just redirects to `/#inflation`. The rule: every Inflation Sucks pick is $80 or under, and only picks Dad Shoe Matt has set appear. Tile images are `assets/budget/budget-1.jpg` through `budget-6.jpg`. Slot 2 is the adidas Adizero Pacer (image: adidas). Slots 1 and 3 to 6 are "Coming soon" placeholders. When a pick is set, swap in a 1200 x 900 JPG, update that tile in `index.html`, and update the "Inflation Sucks pick" box on the matching slot page.
+Inflation Sucks is a tab in the homepage rotation section. `budget.html` just redirects to `/#inflation`. The rule: every Inflation Sucks pick is $80 or under, and only picks Dad Shoe Matt has set appear. Tile images are `assets/budget/budget-1.jpg` through `budget-6.jpg`. Slot 2 is the adidas Adizero Pacer and slot 3 is the adidas Continental 80 (images: adidas). Slots 1 and 4 to 6 are "Coming soon" placeholders. When a pick is set, swap in a 1200 x 900 JPG, update that tile in `index.html`, and update the "Inflation Sucks pick" box on the matching slot page.
 
 ## Homepage tabs
 
-The rotation section on the homepage has three tabs: Matt's Picks (the default), The Classics, and Inflation Sucks. Each tab can be linked with `#picks`, `#classics` or `#inflation`. The small script is `assets/js/tabs.js`. Without JavaScript, the page just shows Matt's Picks. The Classics tiles use `assets/classics/classic-1.jpg` through `classic-6.jpg`. Slot 1 is the Nike Air Monarch IV, shown in Dad Shoe Matt's outlet photo (metadata stripped). Slots 2 to 6 are placeholders until those classic picks are chosen.
+The rotation section on the homepage has three tabs: Matt's Picks (the default), The Classics, and Inflation Sucks. Each tab can be linked with `#picks`, `#classics` or `#inflation`. The small script is `assets/js/tabs.js`. Without JavaScript, the page just shows Matt's Picks. The Classics tiles use `assets/classics/classic-1.jpg` through `classic-6.jpg`. Slot 1 is the Nike Air Monarch IV (Dad Shoe Matt's outlet photo, metadata stripped), slot 3 is the Magnanni Elonso with the black Magnanni Laska as another option (`classic-3-black.jpg`), and slot 6 is the Nike Zoom Vomero 5. The other slots are placeholders until those classic picks are chosen.
+
+## Insoles
+
+`insoles.html` is the insoles page, linked in the main nav, from a homepage callout below the rotation tabs, and from the work dress shoe page. Its image is `assets/insoles/move-game-day.jpg` (image: Move). Prices on that page are as of Oct 18, 2026.
