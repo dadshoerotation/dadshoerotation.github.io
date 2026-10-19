@@ -237,3 +237,26 @@ p{margin:0 0 1.1em}
 .pick-backup .eyebrow{color:var(--orange)}
 .pick-backup .img-credit,.pick-backup .asof{color:var(--ink-soft)}
 .pick-backup .backup-price{color:var(--orange-dark)}
+/* v10: insoles page, classic boxes */
+.insoles-narrow{max-width:760px}
+.insoles-narrow h2{margin-bottom:12px}
+.insoles-narrow p{font-size:17px}
+.zoom-take{margin:28px 0;padding:22px 26px;background:var(--charcoal);color:var(--cream);border-left:6px solid var(--orange);border-radius:var(--radius)}
+.zoom-take p{margin:0;font:600 24px/1.35 var(--serif);color:var(--cream)}
+.zoom-take cite{display:block;margin-top:10px;font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;font-style:normal;color:#f0b494}
+.insole-picks{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.insole-card h3{font-size:24px;margin:4px 0 8px}
+.insole-card .insole-photo{margin:6px 0 14px}
+.insole-card .insole-photo .tile-img{border:1px solid var(--line);border-radius:var(--radius)}
+.insole-card .shop{display:flex;flex-wrap:wrap;gap:10px}
+.insole-card .disclaimer{font-size:14px;background:var(--cream-2);border-radius:var(--radius);padding:10px 14px}
+.insole-list a{color:var(--navy)}
+.insole-list span{font-size:15px;color:var(--ink-soft)}
+.insole-link{font-weight:600}
+.insoles-callout{padding-top:0}
+.classic-alt{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.classic-link{margin-top:12px!important;font-size:14px}
+.pick-backup .classic-link a,.pick-backup p a:not(.btn){color:var(--navy)}
+@media (max-width:900px){.insole-picks{grid-template-columns:1fr}}
+@media (max-width:640px){.zoom-take p{font-size:20px}.insoles-narrow p{font-size:16px}}
+.insoles-hero .wrap{max-width:760px}
