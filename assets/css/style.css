@@ -294,3 +294,9 @@ p{margin:0 0 1.1em}
 .pick-split .pick-price{font-size:14px}
 .pick-backup .backup-price{margin:6px 0 4px}
 .tile-backup + .budget-price,.budget-price + .tile-backup{margin-top:6px}
+/* v12b: rich clip crop: iframe is taller than the 16:9 window, so YouTube letterboxes the
+   video in the middle and its title/branding overlays land in the cropped-off bands. */
+.rich-frame{padding-top:56.25%}
+.rich-frame iframe,.rich-frame #rich-player{top:-80px!important;bottom:auto!important;left:0;height:calc(100% + 160px)!important;pointer-events:none}
+.rich-cover{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;border:0;background:#1d1f2b;color:var(--cream);font:700 20px/1.2 var(--serif);cursor:pointer}
+.rich-cover[hidden]{display:none}

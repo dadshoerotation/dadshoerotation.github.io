@@ -33,9 +33,9 @@
     <p class="eyebrow">I&rsquo;m Rich Beotch</p>
     <p class="rich-shout">I&rsquo;m Rich, Beotch!</p>
     <div class="rich-video" id="rich-video" hidden>
-      <div class="rich-frame"><div id="rich-player"></div></div>
+      <div class="rich-frame"><div id="rich-player"></div><button type="button" class="rich-cover" id="rich-cover" aria-label="Play the clip"><span>&#9654; Tap to play</span></button></div>
       <button type="button" class="rich-unmute" id="rich-unmute">&#128264; Tap to unmute</button>
-      <p class="rich-credit">Clip: <a href="https://www.youtube.com/watch?v=NAJViuC7Ppk" rel="noopener">Chappelle&rsquo;s Show</a>, official upload by Comedy Central Africa on YouTube.</p>
+      <p class="rich-credit">Clip: <a href="https://www.youtube.com/watch?v=NAJViuC7Ppk" rel="noopener">Chappelle&rsquo;s Show / Comedy Central</a></p>
     </div>
     <h1>This website is not for you.</h1>
     <p class="lede">Dad Shoe Rotation is for regular dads. Go spend your money somewhere else.</p>
@@ -50,8 +50,20 @@
   var CLIP = END - START;
   var count = document.getElementById('rich-count'), n = document.getElementById('rich-n');
   var box = document.getElementById('rich-video'), btn = document.getElementById('rich-unmute');
+  var cover = document.getElementById('rich-cover');
   var started = false, fallback = null, player = null;
+  // Our own cover hides YouTube's thumbnail/end screen (which show the video title) whenever it isn't playing.
+  function showCover(on, label) { cover.hidden = !on; if (label) cover.firstChild.textContent = label; }
 
+  // YouTube can flash the first frames before it seeks to START, so keep the cover until we're there.
+  function revealWhenAtStart() {
+    var tries = 0;
+    (function check() {
+      var t = player && player.getCurrentTime ? player.getCurrentTime() : 0;
+      if (t >= START - 0.5 || tries++ > 30) { if (player.getPlayerState() === 1) showCover(false); return; }
+      setTimeout(check, 100);
+    })();
+  }
   function countdown() {
     if (started) return;
     started = true;
@@ -78,17 +90,22 @@
     clearTimeout(fallback);
     // Safety net: clip length + 5s (plus a little load time), whatever the player does.
     fallback = setTimeout(countdown, (CLIP + 5 + 3) * 1000);
-    player = new YT.Player('rich-player', {
+    player = window.richPlayer = new YT.Player('rich-player', {
       host: 'https://www.youtube-nocookie.com',
       videoId: VIDEO,
-      playerVars: { autoplay: 1, mute: 1, playsinline: 1, start: START, end: END, rel: 0, modestbranding: 1 },
+      playerVars: { autoplay: 1, mute: 1, playsinline: 1, start: START, end: END, controls: 0, disablekb: 1, fs: 0, rel: 0, modestbranding: 1, iv_load_policy: 3 },
       events: {
         onReady: function (e) { e.target.mute(); e.target.playVideo(); },
-        onStateChange: function (e) { if (e.data === YT.PlayerState.ENDED) countdown(); },
+        onStateChange: function (e) {
+          if (e.data === YT.PlayerState.PLAYING) revealWhenAtStart();
+          else if (e.data === YT.PlayerState.ENDED) { showCover(true, 'That\u2019s rich.'); countdown(); }
+          else if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.CUED) showCover(true, '\u25B6 Tap to play');
+        },
         onError: giveUp
       }
     });
   };
+  cover.addEventListener('click', function () { if (player && player.playVideo && !started) player.playVideo(); });
   btn.addEventListener('click', function () {
     if (!player || !player.unMute) return;
     player.unMute(); player.setVolume(100);
