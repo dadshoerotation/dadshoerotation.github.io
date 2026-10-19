@@ -303,3 +303,14 @@ p{margin:0 0 1.1em}
 /* v13: per-slot Inflation Sucks budget limit badge */
 .tile-limit{margin:8px 0 2px!important}
 .budget-limit{display:inline-block;white-space:nowrap;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-dark);border:1px solid var(--orange);border-radius:999px;padding:3px 10px;background:#fff}
+/* v14: Shoes I Own tab, compact cards (scales to dozens of pairs) */
+.owned-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
+.owned-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.owned-body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.owned-name{font-family:var(--serif);font-size:16px;line-height:1.25;margin:0 0 2px}
+.owned-price{margin:0;font-size:13px;font-weight:600;color:var(--orange-dark)}
+.owned-price .asof{font-size:11px}
+.owned-link{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);margin-top:2px}
+.owned-card .img-credit{margin-top:auto;padding-top:4px;font-size:11px}
+.tab-rule a{white-space:nowrap}
+@media (max-width:640px){.owned-grid{grid-template-columns:repeat(2,1fr);gap:10px}.owned-name{font-size:15px}}

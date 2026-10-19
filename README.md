@@ -73,3 +73,7 @@ The rotation section on the homepage has three tabs: Matt's Picks (the default),
 ## Insoles
 
 `insoles.html` is the insoles page, linked in the main nav, from a homepage callout below the rotation tabs, and from the work dress shoe page. Its image is `assets/insoles/move-game-day.jpg` (image: Move). Prices on that page are as of Oct 18, 2026.
+
+## Shoes I Own tab
+
+`/#owned` is a homepage tab (not in the main nav) listing pairs Dad Shoe Matt actually owns. The cards are rendered from the `OWNED` array in `assets/js/owned.js`; adding a pair is one line there plus an image at `assets/owned/<slug>.jpg` (1200 x 900, white, EXIF stripped). To swap a retailer image for Matt's own photo, overwrite the file at the same path and change that entry's `credit` to `Photo: Dad Shoe Matt`.
