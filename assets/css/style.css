@@ -288,3 +288,9 @@ p{margin:0 0 1.1em}
 .rich-unmute{margin-top:10px;font:inherit;font-weight:700;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer}
 .rich-unmute[hidden]{display:none}
 .rich-credit{font-size:13px;opacity:.75;margin-top:8px}
+/* v12: prices on every pick */
+.pick-price{font-weight:600;font-size:15px;margin:6px 0 4px!important;color:#f0b494!important}
+.pick-price .asof{color:rgba(223,227,238,.8)}
+.pick-split .pick-price{font-size:14px}
+.pick-backup .backup-price{margin:6px 0 4px}
+.tile-backup + .budget-price,.budget-price + .tile-backup{margin-top:6px}
