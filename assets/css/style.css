@@ -95,6 +95,7 @@ p{margin:0 0 1.1em}
 .pick-split div{background:rgba(255,250,243,.08);border:1px solid rgba(255,250,243,.2);border-radius:4px;padding:14px 16px}
 .pick-split h3{font-size:21px}
 .options{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:8px 0 64px}
+.options-single{grid-template-columns:1fr}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px}
 .card.more{background:var(--cream-2)}
 .card h2{font-size:24px;margin-bottom:4px}
