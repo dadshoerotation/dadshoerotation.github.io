@@ -36,7 +36,7 @@ Each slot uses exactly one image file. It shows on the homepage tile and at the 
 |---|---|---|
 | 1. The Everyday Dad Shoe | `assets/slots/slot-1.jpg` | Nike Air Force 1 Low FlyEase, white (StockX) |
 | 2. The Workout Shoe | `assets/slots/slot-2.jpg` | adidas Adizero Dropset Pro (adidas) |
-| 3. The Clean White Sneaker | `assets/slots/slot-3.jpg` | Magnanni Amadeo, white (Magnanni) |
+| 3. The Clean White Sneaker | `assets/slots/slot-3.jpg` | Magnanni Yoki, white (Magnanni); shop link: Nordstrom Rack |
 | 4. The Work Dress Shoe | `assets/slots/slot-4.jpg` | Allen Edmonds Park Avenue (Zappos) |
 | 5. The Boot | `assets/slots/slot-5.jpg` | Clarks Desert Boot + Tecovas Cartwright, side by side (Clarks, Tecovas) |
 | 6. The Wildcard | `assets/slots/slot-6.jpg` | On Cloudtilt Arc, Alloy/Ivory (On) |
