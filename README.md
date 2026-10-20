@@ -68,7 +68,7 @@ Inflation Sucks is a tab in the homepage rotation section. `budget.html` just re
 
 ## Homepage tabs
 
-The rotation section on the homepage has three tabs: Matt's Picks (the default), The Classics, and Inflation Sucks. Each tab can be linked with `#picks`, `#classics` or `#inflation`. The small script is `assets/js/tabs.js`. Without JavaScript, the page just shows Matt's Picks. The Classics tiles use `assets/classics/classic-1.jpg` through `classic-6.jpg`. Slot 1 is the Nike Air Monarch IV (Dad Shoe Matt's outlet photo, metadata stripped), slot 3 is the Magnanni Elonso with the black Magnanni Laska as another option (`classic-3-black.jpg`), and slot 6 is the Nike Zoom Vomero 5. The other slots are placeholders until those classic picks are chosen.
+The rotation section on the homepage has three tabs: Matt's Picks (the default), The Classics, and Inflation Sucks. Each tab can be linked with `#picks`, `#classics` or `#inflation`. The small script is `assets/js/tabs.js`. Without JavaScript, the page just shows Matt's Picks. The Classics tiles use `assets/classics/classic-1.jpg` through `classic-6.jpg`. Slot 1 is the Nike Air Monarch IV (Dad Shoe Matt's outlet photo, metadata stripped), slot 2 is the Nike Structure Plus in White/Photon Dust/Black (image: Nike), slot 3 is the Magnanni Elonso with the black Magnanni Laska as another option (`classic-3-black.jpg`), and slot 6 is the Nike Zoom Vomero 5. The other slots are placeholders until those classic picks are chosen.
 
 ## Insoles
 
