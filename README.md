@@ -38,7 +38,7 @@ Each slot uses exactly one image file. It shows on the homepage tile and at the 
 | 2. The Workout Shoe | `assets/slots/slot-2.jpg` | adidas Adizero Dropset Pro (adidas) |
 | 3. The Clean White Sneaker | `assets/slots/slot-3.jpg` | Magnanni Elonso Cap Toe, white (Nordstrom Rack); shop link: Nordstrom Rack |
 | 4. The Work Dress Shoe | `assets/slots/slot-4.jpg` | Allen Edmonds Park Avenue (Zappos) |
-| 5. The Boot | `assets/slots/slot-5.jpg` | Tecovas Cartwright (Tecovas) |
+| 5. The Boot | `assets/slots/slot-5-dev-tobacco.jpg` | Shoe the Bear Dev Suede Chelsea, Tobacco (STAG Provisions); the Tecovas Cartwright and brown suede chukkas are listed under other options |
 | 6. The Wildcard | `assets/slots/slot-6.jpg` | On Cloudtilt Arc, Alloy/Ivory (On) |
 
 To swap in your own photo, replace the file and keep the same name. Use a JPG, 1200 x 900 (4:3), shoe centered on a white background, under about 200 KB. If you change the source of a photo, update the "Image:" caption on the slot page and the credit line in the footer of `index.html`.
