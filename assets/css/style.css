@@ -213,8 +213,8 @@ p{margin:0 0 1.1em}
 .tab-panel:focus-visible{outline:2px solid var(--navy);outline-offset:6px;border-radius:var(--radius)}
 .tab-intro{margin:0 0 20px;color:var(--ink-soft);font-size:15px;max-width:720px}
 @media (max-width:640px){
-  .tabs{gap:0}
-  .tab{flex:1 1 0;padding:12px 6px;font-size:11px;letter-spacing:.08em;white-space:nowrap}
+  .tabs{gap:0;flex-wrap:wrap}
+  .tab{flex:1 1 auto;padding:12px 6px;font-size:11px;letter-spacing:.08em;white-space:nowrap}
   .tab-intro{font-size:14px}
 }
 /* v7: Inflation Sucks rule */
@@ -263,44 +263,17 @@ p{margin:0 0 1.1em}
 @media (max-width:640px){.zoom-take p{font-size:20px}.insoles-narrow p{font-size:16px}}
 .insoles-hero .wrap{max-width:760px}
 
-/* v11: rich tab + page */
-.tab-link{text-decoration:none;display:inline-block}
-.tab-link:hover{color:var(--charcoal);background:var(--cream-2)}
-.tab:focus-visible{outline:2px solid var(--navy);outline-offset:-2px}
-.rich{padding:72px 0 88px;text-align:center}
-.rich-wrap{max-width:720px}
-.rich h1{font-size:clamp(36px,7vw,60px);line-height:1.1;margin:8px 0 16px}
-.rich .lede{margin:0 auto 26px;max-width:560px}
-.rich-count{font:600 15px/1.4 var(--sans);letter-spacing:.06em;color:var(--ink-soft)}
-.rich-count span{display:inline-block;min-width:1.2em;font:700 30px/1 var(--serif);color:var(--orange);vertical-align:-4px}
-.rich-cta{justify-content:center}
+/* v11: mobile tab row */
 @media (max-width:640px){
   .tabs-row{gap:0;margin:-4px 0 18px}
   .tabs{flex:1 1 100%;gap:0}
-  .tab-link{flex:1 1 100%;text-align:center}
-  .rich{padding:48px 0 64px}
 }
-/* v11b: rich page clip */
-.rich-shout{font-family:var(--serif, Georgia, serif);font-weight:800;font-size:clamp(40px,9vw,76px);line-height:1;margin:6px 0 22px;color:var(--orange, #d9622b);letter-spacing:-.02em}
-.rich-video{margin:0 auto 28px;max-width:640px}
-.rich-video[hidden]{display:none}
-.rich-frame{position:relative;padding-top:56.25%;background:#111;border-radius:10px;overflow:hidden}
-.rich-frame iframe,.rich-frame #rich-player{position:absolute;inset:0;width:100%;height:100%;border:0}
-.rich-unmute{margin-top:10px;font:inherit;font-weight:700;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer}
-.rich-unmute[hidden]{display:none}
-.rich-credit{font-size:13px;opacity:.75;margin-top:8px}
 /* v12: prices on every pick */
 .pick-price{font-weight:600;font-size:15px;margin:6px 0 4px!important;color:#f0b494!important}
 .pick-price .asof{color:rgba(223,227,238,.8)}
 .pick-split .pick-price{font-size:14px}
 .pick-backup .backup-price{margin:6px 0 4px}
 .tile-backup + .budget-price,.budget-price + .tile-backup{margin-top:6px}
-/* v12b: rich clip crop: iframe is taller than the 16:9 window, so YouTube letterboxes the
-   video in the middle and its title/branding overlays land in the cropped-off bands. */
-.rich-frame{padding-top:56.25%}
-.rich-frame iframe,.rich-frame #rich-player{top:-80px!important;bottom:auto!important;left:0;height:calc(100% + 160px)!important;pointer-events:none}
-.rich-cover{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;border:0;background:#1d1f2b;color:var(--cream);font:700 20px/1.2 var(--serif);cursor:pointer}
-.rich-cover[hidden]{display:none}
 /* v13: per-slot Inflation Sucks budget limit badge */
 .tile-limit{margin:8px 0 2px!important}
 .budget-limit{display:inline-block;white-space:nowrap;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-dark);border:1px solid var(--orange);border-radius:999px;padding:3px 10px;background:#fff}
@@ -315,3 +288,6 @@ p{margin:0 0 1.1em}
 .owned-card .img-credit{margin-top:auto;padding-top:4px;font-size:11px}
 .tab-rule a{white-space:nowrap}
 @media (max-width:640px){.owned-grid{grid-template-columns:repeat(2,1fr);gap:10px}.owned-name{font-size:15px}}
+
+/* v15: Dad Buy It For Life Items tab (reuses .owned-grid cards) */
+.bifl-note{margin:0 0 4px;font-size:13px;color:var(--ink-soft);line-height:1.4}

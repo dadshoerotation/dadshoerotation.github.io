@@ -68,7 +68,7 @@ Inflation Sucks is a tab in the homepage rotation section. `budget.html` just re
 
 ## Homepage tabs
 
-The rotation section on the homepage has three tabs: Matt's Picks (the default), The Classics, and Inflation Sucks. Each tab can be linked with `#picks`, `#classics` or `#inflation`. The small script is `assets/js/tabs.js`. Without JavaScript, the page just shows Matt's Picks. The Classics tiles use `assets/classics/classic-1.jpg` through `classic-6.jpg`. Slot 1 is the Nike Air Monarch IV (Dad Shoe Matt's outlet photo, metadata stripped), slot 2 is the Nike Structure Plus in White/Photon Dust/Black (image: Nike), slot 3 is the Magnanni Elonso with the black Magnanni Laska as another option (`classic-3-black.jpg`), and slot 6 is the Nike Zoom Vomero 5. The other slots are placeholders until those classic picks are chosen.
+The rotation section on the homepage has tabs: Matt's Picks (the default), The Classics, Inflation Sucks, Shoes I Own, and Dad Buy It For Life Items. Each tab can be linked with `#picks`, `#classics` or `#inflation`. The small script is `assets/js/tabs.js`. Without JavaScript, the page just shows Matt's Picks. The Classics tiles use `assets/classics/classic-1.jpg` through `classic-6.jpg`. Slot 1 is the Nike Air Monarch IV (Dad Shoe Matt's outlet photo, metadata stripped), slot 2 is the Nike Structure Plus in White/Photon Dust/Black (image: Nike), slot 3 is the Magnanni Elonso with the black Magnanni Laska as another option (`classic-3-black.jpg`), and slot 6 is the Nike Zoom Vomero 5. The other slots are placeholders until those classic picks are chosen.
 
 ## Insoles
 
@@ -77,3 +77,9 @@ The rotation section on the homepage has three tabs: Matt's Picks (the default),
 ## Shoes I Own tab
 
 `/#owned` is a homepage tab (not in the main nav) listing pairs Dad Shoe Matt actually owns. The cards are rendered from the `OWNED` array in `assets/js/owned.js`; adding a pair is one line there plus an image at `assets/owned/<slug>.jpg` (1200 x 900, white, EXIF stripped). To swap a retailer image for Matt's own photo, overwrite the file at the same path and change that entry's `credit` to `Photo: Dad Shoe Matt`.
+
+## Dad Buy It For Life Items tab
+
+`/#bifl` is the last homepage tab ("Dad Buy It For Life Items"). Cards are rendered from the `BIFL` array in `assets/js/bifl.js`; adding an item is one line there plus an image at `assets/bifl/<slug>.jpg` (1200 x 900, EXIF stripped). Always include a price. Item 1 is the RRL (Double RL) 100% cashmere shawl collar sweater, linked to an eBay search.
+
+The "I'm Rich Beotch" tab and `rich.html` were removed on Nov 2, 2026. A copy is archived outside the published repo at `/workspace/dad-shoe-rotation/archive/im-rich-beotch/`.
