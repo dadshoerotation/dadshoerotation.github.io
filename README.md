@@ -80,6 +80,6 @@ The rotation section on the homepage has tabs: Matt's Picks (the default), The C
 
 ## Dad Buy It For Life Items tab
 
-`/#bifl` is the last homepage tab ("Dad Buy It For Life Items"). Cards are rendered from the `BIFL` array in `assets/js/bifl.js`; adding an item is one line there plus an image at `assets/bifl/<slug>.jpg` (1200 x 900, EXIF stripped). Always include a price. Item 1 is the RRL (Double RL) 100% cashmere shawl collar sweater, linked to an eBay search.
+`/#bifl` is the last homepage tab ("Dad Buy It For Life Items"). Cards are rendered from the `BIFL` array in `assets/js/bifl.js`; adding an item is one line there plus an image at `assets/bifl/<slug>.jpg` (1200 x 900, EXIF stripped). Always include a price. Item 1 is the RRL (Double RL) 100% cashmere shawl collar sweater, linked to an eBay search (plus one example listing).
 
 The "I'm Rich Beotch" tab and `rich.html` were removed on Nov 2, 2026. A copy is archived outside the published repo at `/workspace/dad-shoe-rotation/archive/im-rich-beotch/`.

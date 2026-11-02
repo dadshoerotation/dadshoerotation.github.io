@@ -291,3 +291,4 @@ p{margin:0 0 1.1em}
 
 /* v15: Dad Buy It For Life Items tab (reuses .owned-grid cards) */
 .bifl-note{margin:0 0 4px;font-size:13px;color:var(--ink-soft);line-height:1.4}
+.owned-body .owned-link + .owned-link{margin-top:0}
