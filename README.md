@@ -35,7 +35,7 @@ Each slot uses exactly one image file. It shows on the homepage tile and at the 
 | Slot | Image file | Current image |
 |---|---|---|
 | 1. The Everyday Dad Shoe | `assets/slots/slot-1.jpg` | Nike Air Force 1 Low FlyEase, white (StockX) |
-| 2. The Workout Shoe | `assets/slots/slot-2.jpg` | adidas Adizero Dropset Pro (adidas) |
+| 2. The Workout Shoe | `assets/slots/slot-2.jpg` | Nike Pegasus Plus 2, Flash Crimson / Black / Light Smoke Grey / Metallic Silver (Nike) |
 | 3. The Clean White Sneaker | `assets/slots/slot-3.jpg` | Magnanni Elonso Cap Toe, white (Nordstrom Rack); shop link: Nordstrom Rack |
 | 4. The Work Dress Shoe | `assets/slots/slot-4.jpg` | Allen Edmonds Park Avenue (Zappos) |
 | 5. The Boot | `assets/slots/slot-5-dev-tobacco.jpg` | Shoe the Bear Dev Suede Chelsea, Tobacco (STAG Provisions); the Tecovas Cartwright and brown suede chukkas are listed under other options |
