@@ -1,6 +1,8 @@
 # Dad Shoe Rotation website
 
-Plain HTML + CSS. No build step and no JavaScript. Ready for GitHub Pages: push this folder's contents to a repo and turn on Pages from the root. `.nojekyll` is included so GitHub serves the files exactly as they are.
+Plain HTML + CSS, with a small gallery script on the homepage. No build step. Ready for GitHub Pages: this folder is the published site root. `.nojekyll` is included so GitHub serves the files exactly as they are.
+
+Do not edit or delete `CNAME` (`dadshoerotation.com`).
 
 ## Preview locally
 
@@ -13,39 +15,40 @@ python3 -m http.server 8000
 ## File map
 
 ```
-index.html                     Homepage: hero, six slot tiles, latest blog posts
-slots/everyday-dad-shoe.html   Slot 1: The Everyday Dad Shoe
-slots/workout-shoe.html        Slot 2: The Workout Shoe
-slots/clean-white-sneaker.html Slot 3: The Clean White Sneaker
-slots/work-dress-shoe.html     Slot 4: The Work Dress Shoe
-slots/boot.html                Slot 5: The Boot (optional)
-slots/wildcard.html            Slot 6: The Wildcard (Retro Runner, for now)
+index.html                     One-page rotation: compact header, 2x3 first-view grid, a large section per pick
+assets/gallery/<slot>/         Swipeable product photos (side first, top-down second when available)
+assets/js/gallery.js           Gallery arrows/dots and old-hash redirects
+slots/*.html                   Redirects to the matching homepage anchor
+insoles.html, budget.html      Redirects to the homepage (those sections are archived off the live site)
 blog/index.html                Blog post list
 blog/my-dad-shoe-rotation.html First post (Oct 18, 2026)
 blog/post-template.html        Copy this file to start a new post
 404.html                       "Page not found" page
 assets/css/style.css           All styles (brand colors are at the top)
-assets/                        Logos, favicon, slot images
 ```
 
-## Slot photos
+The previous tabbed homepage (Matt's Picks, The Classics, Inflation Sucks, Shoes I Own, Dad Buy It For Life Items) and the full insoles and slot pages were archived on Nov 22, 2026, outside this repo, at `../archive/2026-11-22-one-page-rotation/`.
 
-Each slot uses exactly one image file. It shows on the homepage tile and at the top of that slot's page:
+Old links still work: slot pages redirect to `/#everyday`, `/#workout`, `/#clean-white`, `/#dress`, `/#boot`, and `/#wildcard`. `budget.html` goes to `/#rotation`. `insoles.html` goes to `/`. Homepage hashes `#picks`, `#classics`, `#inflation`, `#owned`, `#bifl`, and `#slot-1` through `#slot-6` are remapped in `gallery.js`.
 
-| Slot | Image file | Current image |
-|---|---|---|
-| 1. The Everyday Dad Shoe | `assets/slots/slot-1.jpg` | New Balance Made in USA 990v7, Kool Gray / Calcium / Light Arctic Grey (New Balance) |
-| 2. The Workout Shoe | `assets/slots/slot-2.jpg` | Nike Pegasus Plus 2, Flash Crimson / Black / Light Smoke Grey / Metallic Silver (Nike) |
-| 3. The Clean White Sneaker | `assets/slots/slot-3.jpg` | Magnanni Elonso Cap Toe, white (Nordstrom Rack); shop link: Nordstrom Rack |
-| 4. The Work Dress Shoe | `assets/slots/slot-4.jpg` | Allen Edmonds Park Avenue (Zappos) |
-| 5. The Boot | `assets/slots/slot-5-dev-tobacco.jpg` | Shoe the Bear Dev Suede Chelsea, Tobacco (STAG Provisions); the Tecovas Cartwright and brown suede chukkas are listed under other options |
-| 6. The Wildcard | `assets/slots/slot-6.jpg` | On Cloudtilt Arc, Alloy/Ivory (On) |
+## Current rotation (Matt's Picks)
 
-To swap in your own photo, replace the file and keep the same name. Use a JPG, 1200 x 900 (4:3), shoe centered on a white background, under about 200 KB. If you change the source of a photo, update the "Image:" caption on the slot page and the credit line in the footer of `index.html`.
+| Slot | Homepage section | Current pick | Gallery |
+|---|---|---|---|
+| 1. Everyday | `#everyday` | New Balance Made in USA 990v7, Kool Gray / Calcium / Light Arctic Grey, U990GR7, $199.99 at New Balance | `assets/gallery/everyday/` (6 angles, top-down is `02-top.jpg`) |
+| 2. Workout | `#workout` | Nike Pegasus Plus 2, Flash Crimson, IM2541-600, $170 at Nike | `assets/gallery/workout/` (6 angles, including top-down) |
+| 3. Clean White | `#clean-white` | Magnanni Elonso Cap Toe, white, $229.97 at Nordstrom Rack (shop link must stay Rack) | `assets/gallery/clean-white/01-side.jpg` only; no top-down was available |
+| 4. Dress | `#dress` | Allen Edmonds oxfords; pictured Park Avenue cap-toe in Coffee, $450 list (out of stock) | `assets/gallery/dress/` (6 angles, including top-down) |
+| 5. Boot | `#boot` | Shoe the Bear Dev Suede Chelsea, Tobacco (no longer sold) | `assets/gallery/boot/` (5 angles; `02-top.jpg` is a high shaft angle, not a true pair overhead) |
+| 6. Wildcard | `#wildcard` | On Cloudtilt Arc, Alloy/Ivory, $180 at On | `assets/gallery/wildcard/` (5 angles, including top-down) |
+
+The first-view grid uses each gallery's `01-side.jpg`. Backup thumbs reuse existing files under `assets/owned/`, `assets/classics/`, and `assets/slots/`.
+
+Gallery images are 1400 x 1050 JPGs, shoe centered on white, progressive, typically under 200 KB. Image 1 is the main side profile. Image 2 is the top-down angle when one exists.
 
 ## Changing a slot's pick
 
-Open the slot page (for example `slots/wildcard.html`). Edit the text inside `<div class="pick">`, and the lists under "Other options for this slot" and "More ideas". Then update the "Current pick" line on that slot's tile in `index.html`.
+Edit that shoe's `<article class="shoe">` block in `index.html` (name, price, link, blurb, backup thumbs, and more-ideas chips). Replace the files in `assets/gallery/<slot>/`, keeping `01-side.jpg` first and `02-top.jpg` second when a top-down shot is available. Update the matching glance-tile image and the credit line in the footer.
 
 ## Adding a blog post
 
@@ -54,32 +57,14 @@ Open the slot page (for example `slots/wildcard.html`). Edit the text inside `<d
    - Replace the `<title>`, the description, the `<h1>`, the date, and the body text.
    - Delete the `<meta name="robots" content="noindex">` line and the "HOW TO USE" comment.
 3. Open `blog/index.html` and copy one `<li class="post-item">…</li>` block. Paste it at the top of the list, so the newest post comes first. Change the date, title, link, and one-line summary.
-4. Optionally, add the same block to "Latest from the blog" in `index.html`. Change the link to `blog/your-file.html` there, since the homepage sits one folder up.
-5. For photos in posts, put them in `assets/blog/` (create the folder) and use `<img src="../assets/blog/photo.jpg" alt="…">`.
+4. For photos in posts, put them in `assets/blog/` (create the folder) and use `<img src="../assets/blog/photo.jpg" alt="…">`.
 
 ## Notes
 
-- `404.html` links to `/index.html`. That works on a custom domain or a `username.github.io` site. For a project site (`username.github.io/repo-name/`), change that link to `/repo-name/index.html`.
-- The `og:image` tag uses a relative path. Once the site has a real address, change it to the full URL (for example `https://yourdomain.com/assets/dadshoerotation-logo-profile.png`) so link previews show the logo.
-
-## Inflation Sucks (budget rotation)
-
-Inflation Sucks is a tab in the homepage rotation section. `budget.html` just redirects to `/#inflation`. Inflation Sucks is the most economical version of each slot, and only picks Dad Shoe Matt has set appear. There is no global price cap: each set slot shows a "Budget limit" badge equal to the higher of $100 or that slot's pick price (`.budget-limit`, on the tile and on the slot page's Inflation Sucks box). "Coming soon" slots show no limit. Tile images are `assets/budget/budget-1.jpg` through `budget-6.jpg`. Slot 2 is the adidas Adizero Pacer and slot 3 is the adidas Continental 80 (images: adidas). Slots 1 and 4 to 6 are "Coming soon" placeholders. When a pick is set, swap in a 1200 x 900 JPG, update that tile in `index.html`, and update the "Inflation Sucks pick" box on the matching slot page.
-
-## Homepage tabs
-
-The rotation section on the homepage has tabs: Matt's Picks (the default), The Classics, Inflation Sucks, Shoes I Own, and Dad Buy It For Life Items. Each tab can be linked with `#picks`, `#classics` or `#inflation`. The small script is `assets/js/tabs.js`. Without JavaScript, the page just shows Matt's Picks. The Classics tiles use `assets/classics/classic-1.jpg` through `classic-6.jpg`. Slot 1 is the Nike Air Monarch IV (Dad Shoe Matt's outlet photo, metadata stripped), slot 2 is the Nike Structure Plus in White/Photon Dust/Black (image: Nike), slot 3 is the Magnanni Elonso with the black Magnanni Laska as another option (`classic-3-black.jpg`), and slot 6 is the Nike Zoom Vomero 5. The other slots are placeholders until those classic picks are chosen.
-
-## Insoles
-
-`insoles.html` is the insoles page, linked in the main nav, from a homepage callout below the rotation tabs, and from the work dress shoe page. Its image is `assets/insoles/move-game-day.jpg` (image: Move). Prices on that page are as of Oct 18, 2026.
-
-## Shoes I Own tab
-
-`/#owned` is a homepage tab (not in the main nav) listing pairs Dad Shoe Matt actually owns. The cards are rendered from the `OWNED` array in `assets/js/owned.js`; adding a pair is one line there plus an image at `assets/owned/<slug>.jpg` (1200 x 900, white, EXIF stripped). To swap a retailer image for Matt's own photo, overwrite the file at the same path and change that entry's `credit` to `Photo: Dad Shoe Matt`.
-
-## Dad Buy It For Life Items tab
-
-`/#bifl` is the last homepage tab ("Dad Buy It For Life Items"). Cards are rendered from the `BIFL` array in `assets/js/bifl.js`; adding an item is one line there plus an image at `assets/bifl/<slug>.jpg` (1200 x 900, EXIF stripped). Always include a price. Item 1 is the RRL (Double RL) 100% cashmere shawl collar sweater, linked to an eBay search (plus one example listing).
-
-The "I'm Rich Beotch" tab and `rich.html` were removed on Nov 2, 2026. A copy is archived outside the published repo at `/workspace/dad-shoe-rotation/archive/im-rich-beotch/`.
+- The byline is only "Dad Shoe Matt."
+- Only show picks Matthew has explicitly set. Everything else stays out or is labeled as more ideas, not as a current pick.
+- Always show prices. The Dev is the exception and keeps its no-longer-sold note.
+- No political messaging.
+- Magnanni links go to Nordstrom Rack, never full price.
+- `404.html` links to `/index.html`. That works on the custom domain.
+- The `og:image` tag uses a relative path. A full URL helps link previews.
